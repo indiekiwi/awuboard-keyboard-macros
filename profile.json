@@ -1,0 +1,111 @@
+[
+	{
+		"desc": "[Demo action = keyboard] Types out a literal string with standard keyboard characters only",
+		"key": "KEY_KP0",
+		"events": [
+			{
+				"action": "keyboard",
+				"data": "Hello, World!",
+				"dataAlt": "Step 2 demo for KEY_KP8 to switch to an alternative output via toggle"
+			}
+		]
+	},
+	{
+		"desc": "[Demo action = keyboardsys] Simulates pressing the `enter` using the name from the `keyboard` library",
+		"key": "KEY_KP1",
+		"events": [
+			{
+				"action": "keyboardsys",
+				"data": "enter"
+			}
+		]
+	},
+	{
+		"desc": "[Demo action = cmd] Open up a terminal and run a command, runs `gedit` in this demo",
+		"key": "KEY_KP2",
+		"events": [
+			{
+				"action": "cmd",
+				"data": "gedit"
+			}
+		]
+	},
+	{
+		"desc": "BROKEN [Demo action = sub] i forgot what this does, something to do with a subprocess, might remove it later",
+		"key": "",
+		"events": [
+			{
+				"action": "",
+				"data": ""
+			}
+		]
+	},
+	{
+		"desc": "BROKEN [Demo action = replace] Takes the highlighted text, and runs a regular expression on it to replace the string, second event presses the enter key",
+		"key": "KEY_KP3",
+		"events": [
+			{"action": "replace", "pattern": "/hi/", "replace": "bye"},
+			{"action": "sys", "data":  "enter"}
+		]
+	},
+	{
+		"desc": "[Demo action = password] Uses the secret to decrypt and output the password",
+		"key": "KEY_KP4",
+		"events": [
+			{
+				"action": "password",
+				"data": "w6TDhsOmw6fDq8OUw6XDmA=="
+			}
+		]
+	},
+	{
+		"desc": "[Demo action = 2fa] Generates a 2fa token along with hitting the RETURN key",
+		"key": "KEY_KP5",
+		"events": [
+			{
+				"action": "2fa",
+				"data": "w6TDhsOmw6fDq8OUw6XDmA=="
+			}
+		]
+	},
+	{
+		"desc": "BROKEN [Demo action = combo] does a CTRL + C to copy",
+		"key": "KEY_KP6",
+		"events": [
+			{
+				"action": "combo",
+				"char":  "c", "down": ["CTRL"]
+			}
+		]
+	},
+	{
+		"desc": "[Demo action = combo] does a CTRL + V to paste",
+		"key": "KEY_KP7",
+		"events": [
+			{
+				"action": "combo",
+				"char":  "v", "down": ["CTRL"]
+			}
+		]
+	},
+	{
+		"desc": "[Demo action = action] Switches to use `dataAlt` when other actions have this configured",
+		"key": "KEY_KP8",
+		"events": [
+			{
+				"action": "action",
+				"data": "other"
+			}
+		]
+	},
+	{
+		"desc": "[Demo action = action] Switches back to using the default `data`",
+		"key": "KEY_KP9",
+		"events": [
+			{
+				"action": "action",
+				"data": "default"
+			}
+		]
+	}
+]

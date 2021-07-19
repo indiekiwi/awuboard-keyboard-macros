@@ -1,0 +1,11 @@
+{
+	"KEYBOARD_NAME":         "SONiX USB Keyboard",
+	"ENABLE_KEY_LOGGING":    false,
+	"ENABLE_ACTION_LOGGING": true,
+	"ALLOW_AUTH_MACROS":     false,
+	"ENABLE_TOGGLE_MODE":    false,
+	"KEY_TO_TOGGLE":         "KEY_PAUSE",
+	"KEY_TO_TERMINATE":      "KEY_SCROLLLOCK",
+	"DEFAULT_PROFILE":       "profile.json",
+	"DECRYPT_VISUAL_CHECK":  "w6TDhsOmw6fDq8OUw6XDmA=="
+}
