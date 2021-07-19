@@ -13,15 +13,15 @@ This python script listens to your keyboard to perform macros; with a **single k
 	
 This is my first python project, originally created about a year ago. I've been using it regularly. I've finally gotten around to cleaning it up and preparing it for github, although there's a few bugs/things I still need to work on (listed at the end).
 
-## Preresequits
+## Prerequisites
 
 - Runs on Debian (I've only tested on Ubuntu) using python3
 
-    pip3 install keyboard
-	pip3 install pyperclip
-	pip3 install evdev
-	apt install oathtool
-	apt install xsel
+`pip3 install keyboard`
+`pip3 install pyperclip`
+`pip3 install evdev`
+`apt install oathtool`
+`apt install xsel`
 
 ## Hooking the keyboard
 The script will use the keyboard's name to retrieve it's id. Use `cat /proc/bus/input/devices` to list the connected devices to identify the keyboard. Finding the diff between it plugged & unplugged may help in this process.
